@@ -13,3 +13,9 @@ npx create-react-app dev-ed --template typescript
 ```bash
 yarn start
 ```
+
+### Install Styled Components
+
+```bash
+yarn add styled-components && yarn add @types/styled-components -D
+```
