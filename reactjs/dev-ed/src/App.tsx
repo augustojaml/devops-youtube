@@ -1,11 +1,10 @@
 import { GlobalStyle } from './global/global';
 
 function App() {
-  const { REACT_APP_MOVIES_API } = process.env;
-
   return (
     <>
-      <p>{`VARIBLE ${REACT_APP_MOVIES_API}`}</p>
+      <p>print env secret to HTML</p>
+      <pre>{process.env.REACT_APP_SECRET_NAME}</pre>
       <h1>Augusto</h1>
       <GlobalStyle />
     </>
