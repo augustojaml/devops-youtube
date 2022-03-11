@@ -1,4 +1,5 @@
-import { createGlobalStyle } from 'styled-components';
+import { motion } from 'framer-motion';
+import styled, { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
 
@@ -44,9 +45,21 @@ export const GlobalStyle = createGlobalStyle`
     opacity: 0.6;
     cursor: not-allowed;
   }
+  
+`;
 
+export const GlobalContainer = styled.div`
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 1.5rem;
+`;
 
-
-
-
+export const AppGrid = styled(motion.div)`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 1rem;
+  row-gap: 2rem;
+  @media (max-width: 720px) {
+    grid-template-columns: 1fr 1fr;
+  }
 `;
